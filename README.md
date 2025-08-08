@@ -1,43 +1,78 @@
-# SilabadorPtBr
+# Silabador PT-BT
 
-TODO: Delete this and the text below, and describe your gem
+Biblioteca Ruby para separar palavras em sílabas no pt-br.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/silabador_pt_br`. To experiment with that code, run `bin/console` for an interactive prompt.
+## Instalação
 
-## Installation
+Adicione esta linha ao seu Gemfile para usar direto do GitHub:
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
-
-Install the gem and add to the application's Gemfile by executing:
-
-```bash
-bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+```ruby
+gem 'silabador_pt_br', git: 'https://github.com/PablUoo/silabador_pt_br.git'
 ```
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+Depois, rode:
 
 ```bash
-gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+bundle install
 ```
 
-## Usage
+## Uso
 
-TODO: Write usage instructions here
+Aqui está um exemplo simples para separar uma palavra em sílabas usando a gem:
 
-## Development
+```ruby
+require 'silabador_pt_br'
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+palavra = "automóvel"
+sílabas = SilabadorPtBr::Silabador.silabas(palavra)
+puts sílabas.join("-")  # Saída esperada: a-u-to-mó-vel
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+## Desenvolvimento
 
-## Contributing
+- Após clonar o repositório, instale dependências com:
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/silabador_pt_br. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/silabador_pt_br/blob/master/CODE_OF_CONDUCT.md).
+```bash
+bin/setup
+```
 
-## License
+- Rode os testes com:
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+```bash
+rake test
+```
 
-## Code of Conduct
+- Para abrir um console interativo:
 
-Everyone interacting in the SilabadorPtBr project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/silabador_pt_br/blob/master/CODE_OF_CONDUCT.md).
+```bash
+bin/console
+```
+
+- Para instalar localmente:
+
+```bash
+bundle exec rake install
+```
+
+- Para liberar uma nova versão:
+
+Atualize o número da versão em `lib/silabador_pt_br/version.rb` e rode:
+
+```bash
+bundle exec rake release
+```
+
+Isso criará uma tag, fará push no Git e enviará a gem para o RubyGems.
+
+## Contribuição
+
+Bug reports e pull requests são bem-vindos no GitHub:  
+https://github.com/PablUoo/silabador_pt_br
+
+Este projeto é um espaço seguro e acolhedor para colaboração. Leia o [Código de Conduta](https://github.com/PablUoo/silabador_pt_br/blob/master/CODE_OF_CONDUCT.md).
+
+## Licença
+
+Esta gem é licenciada sob a licença MIT.  
+Veja em: https://opensource.org/licenses/MIT
+
