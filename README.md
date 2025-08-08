@@ -1,13 +1,13 @@
-# Silabador PT-BT
+# Silabador
 
-Biblioteca Ruby para separar palavras em sílabas no pt-br.
+Biblioteca Ruby para separar palavras em sílabas.
 
 ## Instalação
 
 Adicione esta linha ao seu Gemfile para usar direto do GitHub:
 
 ```ruby
-gem 'silabador_pt_br', git: 'https://github.com/PablUoo/silabador_pt_br.git'
+gem 'silabador', git: 'https://github.com/PablUoo/silabador.git'
 ```
 
 Depois, rode:
@@ -21,10 +21,10 @@ bundle install
 Aqui está um exemplo simples para separar uma palavra em sílabas usando a gem:
 
 ```ruby
-require 'silabador_pt_br'
+require 'silabador'
 
 palavra = "automóvel"
-sílabas = SilabadorPtBr::Silabador.silabas(palavra)
+sílabas = Silabador::PtBr.silabas(palavra)
 puts sílabas.join("-")  # Saída esperada: a-u-to-mó-vel
 ```
 
@@ -67,9 +67,9 @@ Isso criará uma tag, fará push no Git e enviará a gem para o RubyGems.
 ## Contribuição
 
 Bug reports e pull requests são bem-vindos no GitHub:  
-https://github.com/PablUoo/silabador_pt_br
+https://github.com/PablUoo/silabador
 
-Este projeto é um espaço seguro e acolhedor para colaboração. Leia o [Código de Conduta](https://github.com/PablUoo/silabador_pt_br/blob/master/CODE_OF_CONDUCT.md).
+Este projeto é um espaço seguro e acolhedor para colaboração. Leia o [Código de Conduta](https://github.com/PablUoo/silabador/blob/master/CODE_OF_CONDUCT.md).
 
 ## Licença
 
