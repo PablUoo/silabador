@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in silabador_pt_br.gemspec
+# Specify your gem's dependencies in silabador.gemspec
 gemspec
 
 gem "rake", "~> 13.0"

@@ -56,7 +56,7 @@ bundle exec rake install
 
 - Para liberar uma nova versão:
 
-Atualize o número da versão em `lib/silabador_pt_br/version.rb` e rode:
+Atualize o número da versão em `lib/silabador/version.rb` e rode:
 
 ```bash
 bundle exec rake release

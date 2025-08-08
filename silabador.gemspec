@@ -1,21 +1,21 @@
 # frozen_string_literal: true
 
-require_relative "lib/silabador_pt_br/version"
+require_relative "lib/silabador/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "silabador_pt_br"
-  spec.version = SilabadorPtBr::VERSION
+  spec.name = "silabador"
+  spec.version = Silabador::VERSION
   spec.authors = ["Pablo Aurelio Melo Almeida"]
   spec.email = ["pabloaurelio1163@gmail.com"]
 
   spec.summary = %q{Biblioteca Ruby para separar palavras em sílabas no português brasileiro}
   spec.description = %q{Uma gem para silabação de palavras em português brasileiro, útil para quebra de linhas respeitando sílabas.}
-  spec.homepage = "https://github.com/PablUoo/silabador_pt_br"
+  spec.homepage = "https://github.com/PablUoo/silabador"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.5.0"
   spec.add_development_dependency "minitest"
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
+  # spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage

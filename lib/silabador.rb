@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require_relative "silabador_pt_br/version"
+require_relative "silabador/version"
 
-module SilabadorPtBr
-  class Silabador
+module Silabador
+  class PtBr
     VOGAIS = %w[a e i o u á é í ó ú â ê ô ã õ à]
 
     def self.silabas(palavra)
